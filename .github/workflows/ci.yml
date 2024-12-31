@@ -33,5 +33,8 @@ jobs:
       - name: Build and start Docker containers
         run: docker-compose up -d
 
+      - name: Fix permissions for PHPUnit
+        run: docker-compose run phpunit chmod +x vendor/bin/phpunit
+
       - name: Run PHPUnit tests
         run: docker-compose run phpunit vendor/bin/phpunit tests

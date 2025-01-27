@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-require_once dirname(__DIR__) . '/wordpress/wp-content/themes/twentytwentyfive/functions.php';
+require_once dirname(__DIR__) . '/wordpress/wp-content/themes/mytheme/functions.php';
 
 class Test extends TestCase {
     //test domyslnie przechodzacy

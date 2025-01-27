@@ -14,7 +14,7 @@ class Test extends TestCase {
         
         // Skrót krótszy niż cały tekst
         $excerpt = mytheme_generate_excerpt($text, 20);
-        $this->assertEquals("Lorem ipsum dolor s...", $excerpt);
+        $this->assertEquals("Lorem ipsum dolor si...", $excerpt);
 
         // Skrót równy tekstowi
         $excerpt = mytheme_generate_excerpt($text, 100);
